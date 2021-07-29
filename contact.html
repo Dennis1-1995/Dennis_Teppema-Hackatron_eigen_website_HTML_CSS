@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <!-- GRID -->
+    <div class="grid">
+
+        <!-- HEADER -->
+        <header id="container-header">
+
+            <div id="logo">
+                <div>
+                    <a href="/index.html"><img id="logo-img" src="/images/avatar.png" alt="Logo avatar"></a>
+                </div>
+                <div id="logo-tekst">
+                    <h1>Dennis</h1>
+                </div>
+            </div>
+
+            <nav id="menu">
+                <ul>
+                    <li class="menu-link"><a href="/cv.html">CV</a></li>
+                    <li class="menu-link"><a href="/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+        </header>
+        <!-- END HEADER -->
+
+        <!-- BANNER -->
+        <div id="banner">
+            <img id="banner-img" src="/images/contact.jpg" alt="Foto banner">
+            <div>
+                <h2>Contact</h2>
+            </div>
+        </div>
+        <!-- END BANNER -->
+
+        <!-- MAIN -->
+        <main id="container-main">
+
+            <form class="contact-form" name="contact" method="POST" data-netlify="true">
+            
+                <div class="label-input">
+                    <label>Naam:</label>
+                    <input type="text" name="Naam">
+                </div>
+
+                <div class="label-input">
+                    <label>Geboortedatum:</label>
+                    <input type="date" name="Geboortedatum">
+                </div>
+
+                <div class="label-input geslacht">
+                    <p>Geslacht:</p>
+                    <div class="radio">
+                        <div>
+                            <label>
+                                <input type="radio" name="geslacht" value="Man"> Man
+                            </label>
+                        </div>
+
+                        <div>
+                            <label>
+                                <input type="radio" name="geslacht" value="Vrouw"> Vrouw
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+            
+                <div class="label-input">
+                    <label>E-mail:</label>
+                    <input type="email" name="E-mail">
+                </div>
+            
+                <div class="label-input">
+                    <label>Uw bericht:</label>
+                    <textarea name="Uw bericht" cols="60" rows="10"></textarea>
+                </div>
+            
+                <div>
+                    <input id="btn" type="submit" value="Verstuur">
+                </div>
+
+            
+            </form>
+
+        </main>
+        <!-- END MAIN -->
+
+        <!-- FOOTER -->
+        <footer id="container-footer">
+
+            <div id="footer-social-media">
+                <a href="#">
+                    <li><i class="fa fa-github fa-2x" aria-hidden="true"></i></li>
+                </a>
+                <a href="#">
+                    <li><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></li>
+                </a>
+            </div>
+
+            <div class="footer-tekst">
+                <p>Deze website is gemaakt iov <a href="https://www.wincacademy.nl/" target="_blank"
+                        rel="noopener noreferrer">WINC
+                        Avademy</a> voor Fullstack Development</p>
+            </div>
+
+        </footer>
+        <!-- END FOOTER -->
+
+    </div>
+    <!-- END GRID -->
+</body>
+
+</html>

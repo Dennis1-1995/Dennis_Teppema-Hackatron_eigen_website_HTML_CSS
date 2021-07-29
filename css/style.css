@@ -1,0 +1,206 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sarina&display=swap");
+
+:root {
+  --font-algemeen: "Roboto", sans-serif;
+  --font-logo-tekst: "Sarina", cursive;
+}
+
+/* KLEUREN */
+:root {
+  --zee-blauw: #4990e1;
+  --licht-blauw: #a1c0e0;
+  --paars: #593c8a; /*logo-tekst*/
+  --donker-blauw: #111c35; /*a-link*/
+}
+
+/* ALGEMEEN */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--font-algemeen);
+}
+a {
+  color: var(--donker-blauw);
+  text-decoration: none;
+  font-weight: 500;
+}
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--zee-blauw);
+  margin-bottom: 15px;
+}
+img {
+  width: 100%;
+  height: auto;
+  max-height: 350px;
+  object-fit: cover;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  padding: 0px 1rem;
+}
+/* HEADER */
+#container-header {
+  display: flex;
+  padding: 15px;
+}
+#logo {
+  display: flex;
+}
+#logo-img {
+  height: 150px;
+  width: auto;
+}
+#logo-tekst {
+  font-family: var(--font-logo-tekst);
+  color: var(--paars);
+  align-self: center;
+  margin-left: 1rem;
+  font-size: 1.25rem;
+  width: 200px;
+}
+#menu {
+  width: auto;
+  display: flex;
+  justify-content: flex-start;
+}
+#menu ul {
+  list-style: none;
+  display: flex;
+  margin-left: 10px;
+  align-items: center;
+  width: 100%;
+}
+.menu-link {
+  margin-right: 1rem;
+  font-size: 1.5rem;
+}
+.menu-link a {
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.fa {
+  margin-left: 25px;
+}
+/* BANNER */
+#banner {
+  position: relative;
+}
+#banner-tekst {
+  position: absolute;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #fff;
+  z-index: 999;
+  margin: 0 auto;
+  left: 25%;
+  right: 0;
+  top: 40%;
+  width: 100%;
+}
+/* MAIN */
+.section-img {
+  margin-bottom: 1.5rem;
+}
+
+/* FORMULIER */
+.radio {
+  display: flex;
+}
+.radio label {
+  margin-right: 1.5rem;
+  font-weight: 400;
+}
+.geslacht p {
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+}
+label,
+input {
+  display: block;
+}
+label {
+  font-weight: 900;
+}
+input {
+  border: 1px solid var(--licht-blauw);
+  line-height: 2rem;
+}
+textarea {
+  border: 1px solid var(--licht-blauw);
+}
+.label-input {
+  margin-bottom: 10px;
+}
+#btn {
+  font-weight: 900;
+  padding: 5px;
+  background-color: var(--paars);
+  color: #fff;
+}
+/* VIDEO */
+.video {
+  text-align: center;
+}
+
+/* ERVARINGEN */
+.ervaring {
+  margin-left: 3rem;
+  margin-bottom: 3rem;
+}
+.ervaring-bedrijf p {
+  font-weight: 900;
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+.ervaring-functie {
+  font-weight: 900;
+  margin-bottom: 0.75rem;
+}
+.ervaring-periode {
+  font-style: italic;
+  margin-bottom: 0.75rem;
+}
+.ervaring-taken {
+  margin-bottom: 0.75rem;
+}
+.ervaring-taken ul {
+  margin-left: 1rem;
+}
+.section id {
+  margin-bottom: 10rem;
+}
+/* FOOTER */
+#container-footer {
+  margin: 5rem 0;
+}
+#footer-social-media {
+  display: flex;
+  list-style: none;
+}
+/* TABLET */
+@media screen and (min-width: 768px) {
+  .contact-form,
+  .cv-info {
+    margin-left: 25%;
+  }
+}
+/* DESKTOP */
+@media screen and (min-width: 1024px) {
+  body {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
